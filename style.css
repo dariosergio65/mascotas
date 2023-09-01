@@ -1,6 +1,7 @@
 .contHead {
     background-color: blueviolet;
     display: flex;
+    align-items: center;
 }
 .contHead div{
     padding: 1px;
@@ -19,4 +20,23 @@ div .marco{
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+.separador{
+    width: 5em;
+}
+.menu{
+    height: 3em;
+    background-color: aqua;
+}
+.menu ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+}
+.menu ul li{
+    float: left;
+    margin: 5px;
 }
