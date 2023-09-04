@@ -110,7 +110,7 @@ div .marco{
 
 
 @media only screen and (max-width: 600px) {
-    .marco{
+    /* .marco{
         display: none;
     }
     .logo{
@@ -121,7 +121,7 @@ div .marco{
     }
     .separador{
         display: none;
-    }
+    } */
     .grilla{
         /* margin: 2em; */
         background-color: rgb(243, 10, 41);
