@@ -1,7 +1,22 @@
+header{
+    position: fixed;
+    width: 100%;
+    /* display: inline-block; */
+}
+.relleno{
+    /* background-color: aqua; */
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+body{
+    /* margin-top: 0%; */
+    background-color: rgb(150, 141, 141);
+}
 .contHead {
     background-color: blueviolet;
     display: flex;
     align-items: center;
+    /* margin: 0%; */
 }
 .contHead div{
     padding: 1px;
@@ -24,19 +39,102 @@ div .marco{
 .separador{
     width: 5em;
 }
-.menu{
-    height: 3em;
-    background-color: aqua;
-}
-.menu ul{
-    list-style-type: none;
+
+.grilla{
+    /* margin: 2em; */
+    background-color: rgb(150, 141, 141);
+    height: 80vh;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* display: flex;
-    justify-content: flex-end;
-    align-items: center; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    /* grid-template-areas: 
+    "servi dibujo aa"
+    "servi dibujo aa"
+    "servi dibujo aa"; */
+    column-gap: 10px;
+    row-gap: 2px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-left: 1em;
+    margin-right: 1em;
+    overflow: hidden;
 }
-.menu ul li{
-    float: left;
-    margin: 5px;
+
+/* .grilla div{
+    background-color: green;
+     width: 10em;
+    height: 10em; 
+} */
+
+
+.ifra1{
+    background-color: aquamarine;
+    height: 100%;
+}
+#dibujo{
+    /* height: 10em;
+    width: 10em; */
+    height: auto;
+    background-color: rgb(238, 227, 78);
+    overflow: hidden;
+}
+#dibujo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#aa{
+    background-color: black;
+    display: grid;
+    row-gap: 5px;
+}
+#a1{
+    /* height: 10em;
+    width: 10em; */
+    background-color: rgb(128, 126, 0);
+    /* grid-area: servi; */
+}
+#a2{
+    /* height: 10em;
+    width: 10em; */
+    background-color: rgb(9, 0, 128);
+    /* grid-area: servi; */
+}
+#a3{
+    /* height: 10em;
+    width: 10em; */
+    background-color: rgb(190, 29, 169);
+    /* grid-area: servi; */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .marco{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .logo img{
+        display: none;
+    }
+    .separador{
+        display: none;
+    }
+    .grilla{
+        /* margin: 2em; */
+        background-color: rgb(243, 10, 41);
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vh;
+        /* grid-template-areas: 
+        "aa"
+        "servi"
+        "dibujo"; */
+        row-gap: 2px;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
